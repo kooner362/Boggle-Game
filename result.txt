@@ -1,0 +1,2 @@
+pans,pact,cans
+24

@@ -1,0 +1,37 @@
+Test Mode:
+
+Each test file has two lines.
+
+First line is a 16 character string. Every 4 characters represent a single row of the board.
+So FEWOSTALJHIVACRM is same as
+F E W O
+S T A L
+J H I V
+A C R M
+
+Second line are comma separated words that the player constructed using the board. strtok function might be useful to you to break the line into a series of words.
+
+Test files explained:
+test1.txt - All words are valid.
+test2.txt - Some words are on the board but not from the dictionary. (words STHC,RIVM,ACRM are invalid)
+test3.txt - Some words repeat. (words FEW,WAT, MITE, MITE, MITE are invalid)
+test4.txt - Some words are in the dictrionary but not on the board. (words SNOW, TABLE, STAIRS are invalid)
+test5.txt - Using same letter cell more than once. (words WATT, STALL are invalid)
+test6.txt - None of the words are valid. Score should be zero.
+
+Output:
+You should create a text file named result.txt. The file will have two lines.
+First line are all words(comma separated and no spaces) that are invalid in the order they appear in the test file. If all words are valid then line should be empty.
+Second line is a total score.
+
+So for example for test1.txt the result.txt should be (first line is empty).
+
+12
+
+For test2.txt the result.txt should be
+STHC,RIVM,ACRM
+5
+
+For test3.txt the result.txt should be
+FEW,WAT,MITE,MITE,MITE
+8
